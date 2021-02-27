@@ -1,0 +1,18 @@
+{
+  "name":"FreeRTOS_ThreadPack",
+  "description":"Thread creation, pooling and synchronization for FreeRTOS systems made easy",
+  "keywords":"threads,threading,FreeRTOS",
+  "authors":
+  {
+    "name": "honey the codewitch",
+    "maintainer": true
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/codewitch-honey-crisis/FreeRTOS_ThreadPack.git"
+  },
+  "version": "0.1.0",
+  "frameworks": "*",
+  "platforms": "*",
+}
