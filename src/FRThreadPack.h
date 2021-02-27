@@ -164,7 +164,7 @@ class FRThread {
                 ++*de.pthreadCount;
             if(nullptr!=de.callingThreadHandle)
                 xTaskNotifyGive(de.callingThreadHandle);
-            while(sc.update(true));
+            while(sc.processOne(true));
             if(nullptr!=de.pshutdownThreadHandle && nullptr!=*de.pshutdownThreadHandle) {
                 xTaskNotifyGive(*de.pshutdownThreadHandle);
             }
