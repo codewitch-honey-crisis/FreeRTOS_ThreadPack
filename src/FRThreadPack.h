@@ -102,8 +102,8 @@ public:
     void detach() {
         m_owned=false;
     }
-    // processes pending messages in the message queue. This should be called in a loop on the target thread.
-    bool update(bool blockUntilReady=false)
+    // processes a pending message in the message queue. This should be called in a loop on the target thread.
+    bool processOne(bool blockUntilReady=false)
     {
         if(nullptr!=m_messageRingBufferHandle) {
             //Receive an item from no-split ring buffer

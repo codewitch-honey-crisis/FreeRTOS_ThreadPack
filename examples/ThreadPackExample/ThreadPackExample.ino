@@ -160,8 +160,8 @@ void loop()
   // running calls to the synchronization contexts themselves -
   // that's what threads are for anyway.
   // THIS IS THE TARGET THREAD FOR SEND AND POST FROM ABOVE:
-  if (!g_mainSync.update())
+  if (!g_mainSync.processOne())
   {
-    Serial.println("Could not update synchronization context");
+    Serial.println("Could not process synchronization context");
   }
 }
