@@ -154,7 +154,6 @@ class FRThread {
             xTaskNotifyGive(thunk.callingThreadHandle);
             vTaskSuspend(nullptr);
             thunk.fn(thunk.state);
-            Serial.println();
             vTaskDelete(nullptr);
         }
         static void dispatcherEntry(void* ptr) {
